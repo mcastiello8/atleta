@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './core/layout/navbar/navbar.component';
+import { FooterComponent } from './core/layout/footer/footer.component';
+import { AtletaListComponent } from './features/atleta/atleta-list/atleta-list.component';
+import { FormsModule } from '@angular/forms';
+import { AtletaDetailComponent } from './features/atleta/atleta-detail/atleta-detail.component';
+import { AtletaInsertComponent } from './features/atleta/atleta-insert/atleta-insert.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    AtletaListComponent,
+    AtletaDetailComponent,
+    AtletaInsertComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
